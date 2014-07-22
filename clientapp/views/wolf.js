@@ -5,6 +5,8 @@ module.exports = View.extend({
     template: WolfTemplate,
     autoRender: true,
     bindings: {
-        'model.name': '[role=name]'
+        'model.title': {
+            role: 'name'
+        }
     }
 });

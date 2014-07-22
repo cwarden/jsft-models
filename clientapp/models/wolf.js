@@ -10,5 +10,13 @@ module.exports = Model.extend({
     },
     session: {
         map: ['string', true, 'http://placehold.it/200x200']
+    },
+    derived: {
+        title: {
+            deps: ['name', 'age'],
+            fn: function () {
+                return this.name + ' ' + this.age;
+            }
+        }
     }
 });
