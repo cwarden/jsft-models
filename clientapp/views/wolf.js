@@ -1,8 +1,8 @@
 var View = require('ampersand-view');
-var PersonTemplate = require('../templates/person.jade');
+var WolfTemplate = require('../templates/wolf.jade');
 
 module.exports = View.extend({
-    template: PersonTemplate,
+    template: WolfTemplate,
     autoRender: true,
     bindings: {
         'model.name': '[role=name]'

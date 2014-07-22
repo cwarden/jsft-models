@@ -1,6 +1,6 @@
 var View = require('ampersand-view');
 var MainTemplate = require('../templates/main.jade');
-var PersonView = require('./person');
+var WolfView = require('./wolf');
 
 module.exports = View.extend({
     template: MainTemplate,
@@ -11,7 +11,7 @@ module.exports = View.extend({
     render: function () {
         this.renderWithTemplate();
 
-        new PersonView({
+        new WolfView({
             model: this.model,
             el: this.getByRole('me')
         });

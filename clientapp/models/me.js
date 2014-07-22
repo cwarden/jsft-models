@@ -1,5 +1,5 @@
-var Model = require('./person');
+var Wolf = require('./wolf');
 
-module.exports = Model.extend({
+module.exports = Wolf.extend({
     url: '/api/me.json'
 });
