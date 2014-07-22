@@ -13,40 +13,42 @@ module.exports = View.extend({
         this.model[prop] = parseFloat(value);
     },
     bindings: {
-        'model.name': '[role=name]',
+        'model.title': {
+            role: 'name'
+        },
         'model.map': {
             type: 'attribute',
             name: 'src',
-            selector: '[role=map]'
+            role: 'map'
         },
         'model.zoom': {
             type: 'attribute',
             name: 'value',
-            selector: '[role=zoom]'
+            role: 'zoom'
         },
         'model.longitude': {
             type: 'attribute',
             name: 'value',
-            selector: '[role=longitude]'
+            role: 'longitude'
         },
         'model.latitude': {
             type: 'attribute',
             name: 'value',
-            selector: '[role=latitude]'
+            role: 'latitude'
         },
         'model.isMe': {
             type: 'booleanClass',
             name: 'is-me',
-            selector: '[role=content]'
+            role: 'content'
         },
         'model.isDisabled': [{
             type: 'booleanAttribute',
             name: 'disabled',
-            selector: '[role=latitude]'
+            role: 'latitude'
         }, {
             type: 'booleanAttribute',
             name: 'disabled',
-            selector: '[role=longitude]'
+            role: 'longitude'
         }]
     }
 });

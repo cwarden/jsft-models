@@ -14,6 +14,12 @@ module.exports = Model.extend({
         zoom: ['number', true, 7]
     },
     derived: {
+        title: {
+            deps: ['name', 'age'],
+            fn: function () {
+                return this.name + ' ' + this.age;
+            }
+        },
         hasGeo: {
             deps: ['latitude', 'longitude'],
             fn: function () {
