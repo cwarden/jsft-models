@@ -6,7 +6,7 @@ module.exports = Collection.extend({
     initialize: function () {
         var self = this;
         this.page = 0;
-        this.parent.on('change:sortFriends', function () {
+        this.parent.on('change:sortFriendsBy', function () {
             self.sort();
         });
     },
@@ -14,7 +14,7 @@ module.exports = Collection.extend({
         return '/api/friends/' + this.page + '.json';
     },
     comparator: function (model) {
-        return model[this.parent.sortFriends];
+        return model[this.parent.sortFriendsBy];
     },
     fetch: function () {
         this.page++;

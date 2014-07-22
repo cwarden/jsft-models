@@ -7,7 +7,7 @@ module.exports = Model.extend({
 		friends: Friends
 	},
     props: {
-        sortFriends: ['string', true, 'name']
+        sortFriendsBy: ['string', true, 'name']
     },
     session: {
         isMe: ['boolean', true, true]
