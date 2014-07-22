@@ -7,5 +7,8 @@ module.exports = Model.extend({
         name: 'string',
         latitude: 'number',
         longitude: 'number'
+    },
+    session: {
+        map: ['string', true, 'http://placehold.it/200x200']
     }
 });

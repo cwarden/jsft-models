@@ -1,8 +1,8 @@
 main.container-fluid
-    h1 The WolfBook
+    h1
+        | The WolfBook
+        .pull-right
+            button.btn.btn-primary.btn-block(role='find-friends') Find Friends
     .row
-        .col-xs-8(role='me')
-        .col-xs-2.col-xs-offset-2
-            .well
-                button.btn.btn-primary(role='find-friends') Find Friends
+        div(role='me')
     .row(role='friends')

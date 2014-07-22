@@ -16,6 +16,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/beefy clientapp/app.js 8000 --open -- -t jadeify"
+    "start": "beefy clientapp/app.js 8000 --open -- -t jadeify"
   }
 }

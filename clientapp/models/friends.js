@@ -8,7 +8,6 @@ module.exports = Collection.extend({
     },
     url: function () {
         this.page++;
-        var page = Math.min(this.page, 2);
-        return '/api/friends/' + page + '.json';
+        return '/api/friends/' + Math.min(this.page, 2) + '.json';
     }
 });
