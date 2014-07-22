@@ -6,9 +6,10 @@ window.app = {
     init: function () {
         var app = this;
 
+        app.me = new Me();
+        app.me.fetch();
+
         domready(function () {
-            app.me = new Me();
-            app.me.fetch();
             app.view = new MainView({ model: app.me });
             document.body.appendChild(app.view.el);
         });
