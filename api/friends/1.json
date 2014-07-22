@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "age": 35,
+    "name": "Lottie Gallagher",
+    "latitude": 37.375038,
+    "longitude": 20.021631
+  },
+  {
+    "id": 1,
+    "age": 35,
+    "name": "Delores King",
+    "latitude": 17.301976,
+    "longitude": 141.976642
+  },
+  {
+    "id": 2,
+    "age": 23,
+    "name": "Shannon Gregory",
+    "latitude": 38.850044,
+    "longitude": -77.344556
+  },
+  {
+    "id": 3,
+    "age": 32,
+    "name": "Iris Donaldson",
+    "latitude": 79.828153,
+    "longitude": -76.570217
+  },
+  {
+    "id": 4,
+    "age": 40,
+    "name": "Coffey Lindsay",
+    "latitude": -27.640317,
+    "longitude": 49.7806
+  },
+  {
+    "id": 5,
+    "age": 26,
+    "name": "Kerr Guthrie",
+    "latitude": -29.633228,
+    "longitude": -108.899107
+  },
+  {
+    "id": 6,
+    "age": 39,
+    "name": "Knight Meyers",
+    "latitude": -34.831498,
+    "longitude": 82.871797
+  },
+  {
+    "id": 7,
+    "age": 39,
+    "name": "Burks Harrell",
+    "latitude": 4.035053,
+    "longitude": -93.695185
+  },
+  {
+    "id": 8,
+    "age": 35,
+    "name": "Riddle Sykes",
+    "latitude": 31.624695,
+    "longitude": -144.471769
+  },
+  {
+    "id": 9,
+    "age": 27,
+    "name": "Neva Barber",
+    "latitude": -48.714782,
+    "longitude": -174.852555
+  }
+]

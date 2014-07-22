@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "age": 38,
+    "name": "Marietta Harvey",
+    "latitude": -40.581369,
+    "longitude": 60.251218
+  },
+  {
+    "id": 1,
+    "age": 35,
+    "name": "Holland Cameron",
+    "latitude": -27.444742,
+    "longitude": -27.529686
+  },
+  {
+    "id": 2,
+    "age": 22,
+    "name": "Marylou Blake",
+    "latitude": -70.323186,
+    "longitude": 46.377268
+  },
+  {
+    "id": 3,
+    "age": 27,
+    "name": "Gibbs Clemons",
+    "latitude": -61.025882,
+    "longitude": 0.464055
+  },
+  {
+    "id": 4,
+    "age": 40,
+    "name": "Paulette Frederick",
+    "latitude": -82.666642,
+    "longitude": -83.33517
+  },
+  {
+    "id": 5,
+    "age": 29,
+    "name": "Viola Love",
+    "latitude": -21.044552,
+    "longitude": 134.828637
+  },
+  {
+    "id": 6,
+    "age": 21,
+    "name": "Chandra Foreman",
+    "latitude": -74.790846,
+    "longitude": 151.535052
+  },
+  {
+    "id": 7,
+    "age": 23,
+    "name": "Booth Newman",
+    "latitude": -61.295533,
+    "longitude": 136.752584
+  },
+  {
+    "id": 8,
+    "age": 38,
+    "name": "Clarke Sullivan",
+    "latitude": -55.113663,
+    "longitude": 26.176455
+  },
+  {
+    "id": 9,
+    "age": 23,
+    "name": "Keri Potter",
+    "latitude": -28.996197,
+    "longitude": 106.324791
+  }
+]
