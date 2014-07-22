@@ -32,8 +32,8 @@ module.exports = View.extend({
 		},
 		'model.isMe': {
 		    type: 'booleanClass',
-		    selector: '[role=title]',
-		    name: 'bg-primary'
+		    selector: '[role=person]',
+		    name: 'is-me'
 		},
 		'model.isDisabled': [{
 			type: 'booleanAttribute',
