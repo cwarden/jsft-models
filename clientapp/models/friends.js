@@ -1,12 +1,23 @@
 var Collection = require('ampersand-rest-collection');
-var Friend = require('./friend');
+var Person = require('./person');
 
 module.exports = Collection.extend({
-    model: Friend,
-    url: function () {
-        return this.length === 0 ? '/api/me/friends.json' : '/api/me/friends-update.json';
+    model: Person,
+    initialize: function () {
+        var self = this;
+        this.page = 0;
+        this.parent.on('change:sortFriends', function () {
+            self.sort();
+        });
     },
-    comparator: function (model1, model2) {
-        return model1.age - model2.age;
+    url: function () {
+        return '/api/friends/' + this.page + '.json';
+    },
+    comparator: function (model) {
+        return model[this.parent.sortFriends];
+    },
+    fetch: function () {
+        this.page++;
+        return Collection.prototype.fetch.apply(this, arguments);
     }
 });

@@ -1,5 +1,6 @@
-main
+main.container-fluid
     h1 The WolfBook
-    div(role='me')
     button.btn.btn-primary(role='fetch') Find Friends
-    div(role='friends')
+    .row
+        div.col-xs-12(role='me')
+    .row(role='friends')

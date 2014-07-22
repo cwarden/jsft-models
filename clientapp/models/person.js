@@ -35,6 +35,12 @@ module.exports = Model.extend({
             fn: function () {
                 return this.name + ' is ' + this.age + ' years old';
             }
+        },
+        isDisabled: {
+            deps: ['isMe'],
+            fn: function () {
+                return !this.isMe;
+            }
         }
     }
 });

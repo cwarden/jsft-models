@@ -6,11 +6,10 @@ module.exports = Model.extend({
 	collections: {
 		friends: Friends
 	},
-    initialize: function () {
-        this.on('change:mapZoom', function (model, value) {
-            model.friends.each(function (friend) {
-                friend.mapZoom = value;
-            });
-        });
+    props: {
+        sortFriends: ['string', true, 'name']
+    },
+    session: {
+        isMe: ['boolean', true, true]
     }
 });
