@@ -3,6 +3,9 @@ main.container-fluid
         | The WolfBook
         .pull-right
             button.btn.btn-primary.btn-block(role='find-friends') Find Friends
+            select.form-control(role='sort-friends')
+                option(value='name') name
+                option(value='age') age
     .row
         div(role='me')
     .row(role='friends')
