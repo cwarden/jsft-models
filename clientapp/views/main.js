@@ -6,7 +6,8 @@ module.exports = View.extend({
     template: MainTemplate,
     autoRender: true,
     events: {
-        'click [role=find-friends]': 'findFriends'
+        'click [role=find-friends]': 'findFriends',
+        'change [role=sort-friends]': 'sortFriends'
     },
     render: function () {
         this.renderWithTemplate();
@@ -20,5 +21,8 @@ module.exports = View.extend({
     },
     findFriends: function () {
         this.model.friends.fetch();
+    },
+    sortFriends: function (event) {
+        this.model.sortFriendsBy = event.target.value;
     }
 });
