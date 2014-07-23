@@ -9,6 +9,13 @@ module.exports = View.extend({
         'click [role=find-friends]': 'findFriends',
         'change [role=sort-friends]': 'sortFriends'
     },
+    bindings: {
+        'model.sortFriendsBy': {
+            type: 'attribute',
+            name: 'value',
+            role: 'sort-friends'
+        }
+    },
     render: function () {
         this.renderWithTemplate();
 
