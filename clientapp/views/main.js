@@ -11,8 +11,7 @@ module.exports = View.extend({
     },
     bindings: {
         'model.sortFriendsBy': {
-            type: 'attribute',
-            name: 'value',
+            type: 'value',
             role: 'sort-friends'
         }
     },

@@ -22,18 +22,15 @@ module.exports = View.extend({
             role: 'map'
         },
         'model.zoom': {
-            type: 'attribute',
-            name: 'value',
+            type: 'value',
             role: 'zoom'
         },
         'model.longitude': {
-            type: 'attribute',
-            name: 'value',
+            type: 'value',
             role: 'longitude'
         },
         'model.latitude': {
-            type: 'attribute',
-            name: 'value',
+            type: 'value',
             role: 'latitude'
         },
         'model.isMe': {
