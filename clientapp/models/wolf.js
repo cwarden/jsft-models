@@ -37,7 +37,8 @@ module.exports = Model.extend({
                         center: [this.latitude, this.longitude].join(),
                         markers: [this.latitude, this.longitude].join(),
                         size: this.size,
-                        zoom: this.zoom
+                        zoom: this.zoom,
+                        key: 'AIzaSyBMMJfzDkhIDbOFR_TYDRmCWWSqQK0rapY'
                     });
                 } else {
                     return 'http://placehold.it/' + this.size;
