@@ -7,6 +7,11 @@ module.exports = View.extend({
     bindings: {
         'model.title': {
             role: 'name'
+        },
+        'model.map': {
+            type: 'attribute',
+            name: 'src',
+            role: 'map'
         }
     }
 });
