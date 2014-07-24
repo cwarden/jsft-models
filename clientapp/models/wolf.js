@@ -35,6 +35,7 @@ module.exports = Model.extend({
                 if (this.hasGeo) {
                     return 'http://maps.googleapis.com/maps/api/staticmap?' + qs.stringify({
                         center: [this.latitude, this.longitude].join(),
+                        markers: [this.latitude, this.longitude].join(),
                         size: this.size,
                         zoom: this.zoom
                     });
