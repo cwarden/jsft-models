@@ -4,14 +4,16 @@ var Me = require('./models/me');
 
 window.app = {
     init: function () {
-        var app = this;
+        var self = this;
 
-        app.me = new Me();
-        app.me.fetch();
+        this.me = new Me();
+        this.me.fetch();
 
         domready(function () {
-            app.view = new MainView({ model: app.me });
-            document.body.appendChild(app.view.el);
+            self.view = new MainView({
+                model: self.me,
+                el: document.body
+            });
         });
     }
 };
