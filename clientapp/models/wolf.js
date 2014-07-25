@@ -34,13 +34,15 @@ module.exports = Model.extend({
             deps: ['hasGeo', 'latitude', 'longitude', 'size', 'zoom', 'key'],
             fn: function () {
                 if (this.hasGeo) {
-                    return 'http://maps.googleapis.com/maps/api/staticmap?' + qs.stringify({
+                    var params = {
                         center: [this.latitude, this.longitude].join(),
                         markers: [this.latitude, this.longitude].join(),
                         size: this.size,
                         zoom: this.zoom,
                         key: this.key
-                    });
+                    };
+                    if (!params.key) delete params.key;
+                    return 'http://maps.googleapis.com/maps/api/staticmap?' + qs.stringify(params);
                 } else {
                     return 'http://placehold.it/' + this.size;
                 }
