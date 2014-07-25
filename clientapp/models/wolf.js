@@ -11,7 +11,8 @@ module.exports = Model.extend({
     },
     session: {
         size: ['string', true, '200x200'],
-        zoom: ['number', true, 7]
+        zoom: ['number', true, 7],
+        key: ['string', true, 'AIzaSyBMMJfzDkhIDbOFR_TYDRmCWWSqQK0rapY']
     },
     derived: {
         title: {
@@ -30,7 +31,7 @@ module.exports = Model.extend({
             }
         },
         map: {
-            deps: ['hasGeo', 'latitude', 'longitude', 'size', 'zoom'],
+            deps: ['hasGeo', 'latitude', 'longitude', 'size', 'zoom', 'key'],
             fn: function () {
                 if (this.hasGeo) {
                     return 'http://maps.googleapis.com/maps/api/staticmap?' + qs.stringify({
@@ -38,7 +39,7 @@ module.exports = Model.extend({
                         markers: [this.latitude, this.longitude].join(),
                         size: this.size,
                         zoom: this.zoom,
-                        key: 'AIzaSyBMMJfzDkhIDbOFR_TYDRmCWWSqQK0rapY'
+                        key: this.key
                     });
                 } else {
                     return 'http://placehold.it/' + this.size;
