@@ -16,6 +16,7 @@ module.exports = View.extend({
             model: this.model,
             el: this.getByRole('me')
         });
+        this.renderCollection(this.model.friends, WolfView, this.getByRole('friends'));
 
         return this;
     },
