@@ -8,7 +8,7 @@
   },
   {
     "id": 1,
-    "age": 33,
+    "age": 35,
     "name": "Gladys Mcneil",
     "latitude": 41.465522,
     "longitude": -89.17138
@@ -22,7 +22,7 @@
   },
   {
     "id": 3,
-    "age": 37,
+    "age": 22,
     "name": "Roth Olsen",
     "latitude": 38.922852,
     "longitude": -94.388946
@@ -36,7 +36,7 @@
   },
   {
     "id": 5,
-    "age": 27,
+    "age": 21,
     "name": "Madge James",
     "latitude": 47.269132,
     "longitude": -104.357282
